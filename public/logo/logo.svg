@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700" />
+      <stop offset="50%" stop-color="#FFB800" />
+      <stop offset="100%" stop-color="#E59400" />
+    </linearGradient>
+  </defs>
+
+  <!-- Aperture Blades Circle (Left Symbol) -->
+  <g transform="translate(100, 110)">
+    <!-- Aperture outer circle -->
+    <circle cx="0" cy="0" r="75" fill="url(#goldGradient)" />
+    
+    <!-- Shutter Blades Cuts (Negative space black lines) -->
+    <path d="M 0 0 L -40 -65 L -70 -20 Z" fill="#050505" />
+    <path d="M 0 0 L 25 -70 L 70 -30 Z" fill="#050505" />
+    <path d="M 0 0 L 70 -20 L 65 40 Z" fill="#050505" />
+    <path d="M 0 0 L 40 65 L -20 70 Z" fill="#050505" />
+    <path d="M 0 0 L -65 35 L -70 -25 Z" fill="#050505" />
+    <path d="M 0 0 L -30 70 L 30 65 Z" fill="#050505" />
+
+    <!-- Center hexagon / aperture hole -->
+    <polygon points="-15,-25 15,-25 30,0 15,25 -15,25 -30,0" fill="#050505" />
+  </g>
+
+  <!-- AZZUDOP Stencil Brand Text -->
+  <g transform="translate(200, 125)">
+    <!-- AZZU Text -->
+    <text x="0" y="0" font-family="'Inter', 'Montserrat', 'Arial Black', sans-serif" font-weight="900" font-size="78" fill="#FFFFFF" letter-spacing="2">
+      AZZU
+    </text>
+
+    <!-- Camera Icon between AZZU & DOP -->
+    <g transform="translate(245, -55) scale(1.1)">
+      <!-- Camera Body -->
+      <path d="M 5 15 L 12 5 L 28 5 L 35 15 L 45 15 C 48 15 50 17 50 20 L 50 42 C 50 45 48 47 45 47 L 5 47 C 2 47 0 45 0 42 L 0 20 C 0 17 2 15 5 15 Z" fill="none" stroke="#FFFFFF" stroke-width="4" />
+      <!-- Camera Lens Circle -->
+      <circle cx="25" cy="30" r="11" fill="none" stroke="url(#goldGradient)" stroke-width="4" />
+      <circle cx="25" cy="30" r="4" fill="url(#goldGradient)" />
+      <!-- Flash/Button dot -->
+      <circle cx="40" cy="22" r="2.5" fill="#FFFFFF" />
+    </g>
+
+    <!-- DOP Text -->
+    <text x="310" y="0" font-family="'Inter', 'Montserrat', 'Arial Black', sans-serif" font-weight="900" font-size="78" fill="#FFFFFF" letter-spacing="2">
+      DOP
+    </text>
+
+    <!-- Subtitle: Photography & Cinematography -->
+    <text x="5" y="38" font-family="'Inter', 'Montserrat', sans-serif" font-weight="600" font-size="22" fill="url(#goldGradient)" letter-spacing="4">
+      PHOTOGRAPHY &amp; CINEMATOGRAPHY
+    </text>
+  </g>
+</svg>
