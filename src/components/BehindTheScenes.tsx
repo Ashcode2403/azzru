@@ -34,7 +34,7 @@ export const BehindTheScenes: React.FC = () => {
           >
             <div className="relative rounded-2xl overflow-hidden glass-card border border-white/15 p-3 shadow-2xl">
               <img 
-                src="/images/bts/bts_azharuddin_team.jpg" 
+                src="/images/bts/bts_azharuddin_team.jpeg" 
                 alt="Azharuddin with production crew in Dubai"
                 className="w-full h-auto rounded-xl object-cover filter brightness-95 group-hover:scale-105 transition-transform duration-700" 
               />

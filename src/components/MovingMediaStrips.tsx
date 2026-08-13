@@ -3,21 +3,23 @@ import { PROJECTS } from '../data/portfolioData';
 
 export const MovingMediaStrips: React.FC = () => {
   const imagesRow1 = [
-    'https://images.unsplash.com/photo-1518173946687-a4c8a383392e?auto=format&fit=crop&w=800&q=80',
-    'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80',
-    'https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=800&q=80',
-    '/images/bts/bts_azharuddin_team.jpg',
-    'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=800&q=80',
-    'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80',
+    '/images/photo/1.jpg',
+    '/images/photo/2.jpg',
+    '/images/photo/3.jpg',
+    '/images/photo/4.jpg',
+    '/images/photo/5.jpg',
+    '/images/photo/6.jpg',
   ];
 
   const imagesRow2 = [
-    'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80',
-    'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80',
-    'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=80',
-    'https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80',
-    'https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=800&q=80',
-    'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80',
+        '/images/photo/7.jpg',
+        '/images/photo/8.jpg',
+        '/images/photo/9.jpg',
+        '/images/photo/10.jpg',
+        '/images/photo/11.jpg',
+        '/images/photo/12.jpg',
+
+
   ];
 
   // Duplicate for seamless infinite loop
@@ -33,7 +35,7 @@ export const MovingMediaStrips: React.FC = () => {
             {list1.map((img, i) => (
               <div
                 key={i}
-                className="w-72 sm:w-96 aspect-[16/9] rounded-xl overflow-hidden glass-card border border-white/10 flex-none group relative"
+                className="w-72 sm:w-96 aspect-[3/4] rounded-xl overflow-hidden glass-card border border-white/10 flex-none group relative"
               >
                 <img 
                   src={img} 
@@ -54,7 +56,7 @@ export const MovingMediaStrips: React.FC = () => {
             {list2.map((img, i) => (
               <div
                 key={i}
-                className="w-72 sm:w-96 aspect-[16/9] rounded-xl overflow-hidden glass-card border border-white/10 flex-none group relative"
+                className="w-72 sm:w-96 aspect-[3/4] rounded-xl overflow-hidden glass-card border border-white/10 flex-none group relative"
               >
                 <img 
                   src={img} 

@@ -40,7 +40,7 @@ export const AboutSection: React.FC = () => {
           >
             <div className="relative rounded-2xl overflow-hidden glass-card border border-white/15 p-2 shadow-[0_20px_50px_rgba(0,0,0,0.8)] group">
               <img 
-                src="/images/bts/bts_azharuddin_team.jpg" 
+                src="/images/bts/bts_azharuddin_team.jpeg" 
                 alt="Azharuddin and crew on location in Dubai" 
                 className="w-full h-auto rounded-xl object-cover filter brightness-95 contrast-105 group-hover:scale-105 transition-transform duration-700" 
               />

@@ -36,7 +36,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenReel }) => {
         <div 
           className="absolute inset-0 bg-cover bg-center filter brightness-[0.4] contrast-[1.1] transition-transform duration-1000"
           style={{ 
-            backgroundImage: `url('https://images.unsplash.com/photo-1518173946687-a4c8a383392e?auto=format&fit=crop&w=2000&q=90')` 
+            backgroundImage: `url(/images/bts/person.jpeg)` 
           }}
         />
 
