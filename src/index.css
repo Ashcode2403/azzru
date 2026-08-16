@@ -97,6 +97,10 @@
   border-color: rgba(255, 184, 0, 0.5);
 }
 
+.tx-color-yellow {
+  color: #FFB800 !important;
+}
+
 /* Animations */
 @keyframes recBlink {
   0%, 100% { opacity: 1; }
