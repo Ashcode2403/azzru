@@ -135,17 +135,17 @@ export const HorizontalScrollPortfolio: React.FC<HorizontalScrollPortfolioProps>
             </div>
 
             {/* Expandable Gold Line on Hover */}
-            <div className="absolute bottom-[110px] left-6 right-6 h-[2px] bg-white/20 overflow-hidden">
-              <div className="w-full h-full bg-[#FFB800] transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out" />
-            </div>
+           
 
             {/* Bottom Project Details */}
             <div className="absolute bottom-6 left-6 right-6 z-10">
               <div className="flex items-center justify-between">
                 <div>
                   <h3 className="text-xl sm:text-2xl font-bold text-white uppercase tracking-wide group-hover:text-[#FFB800] transition-colors duration-300">
-                    {project.title}
-                  </h3>
+  {project.title.length > 40
+    ? `${project.title.slice(0, 40)}...`
+    : project.title}
+</h3>
                   <p className="text-xs text-white/60 font-mono mt-1">
                     {project.location} • {project.role}
                   </p>

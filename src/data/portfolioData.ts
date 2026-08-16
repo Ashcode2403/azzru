@@ -167,10 +167,10 @@ export const PROJECTS: Project[] = [
     coverImage: '/images/ytb/ytb5.jpg',
     youtubeId: '-eQ19K9wukQ',
     featured: true,
-    gallery: [
-      '/images/bts/bts_azharuddin_team.jpg',
-      'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1200&q=80'
-    ]
+    // gallery: [
+    //   '/images/bts/bts_azharuddin_team.jpg',
+    //   'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1200&q=80'
+    // ]
   },
   {
     id: 'proj-10',
@@ -184,11 +184,11 @@ export const PROJECTS: Project[] = [
     coverImage: '/images/ytb/ytb6.jpg',
     youtubeId: 'mdwM84ExvMs',
     featured: false,
-    gallery: [
-      'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80'
-    ]
+    // gallery: [
+    //   'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1200&q=80',
+    //   'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1200&q=80',
+    //   'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80'
+    // ]
   },
   {
     id: 'proj-11',

@@ -3,21 +3,21 @@ import { PROJECTS } from '../data/portfolioData';
 
 export const MovingMediaStrips: React.FC = () => {
   const imagesRow1 = [
-    '/images/photo/1.jpg',
-    '/images/photo/2.jpg',
-    '/images/photo/3.jpg',
-    '/images/photo/4.jpg',
-    '/images/photo/5.jpg',
-    '/images/photo/6.jpg',
+    '/images/photo/a.jpg',
+    '/images/photo/d.jpg',
+    '/images/photo/f.JPG',
+    '/images/photo/b.jpg',
+    '/images/photo/e.jpg',
+    '/images/photo/c.jpg',
   ];
 
   const imagesRow2 = [
-        '/images/photo/7.jpg',
-        '/images/photo/8.jpg',
-        '/images/photo/9.jpg',
-        '/images/photo/10.jpg',
-        '/images/photo/11.jpg',
-        '/images/photo/12.jpg',
+        '/images/photo/h.jpg',
+        '/images/photo/i.jpg',
+        '/images/photo/IMG_6840.JPG',
+        '/images/photo/IMG_4595.JPG',
+        '/images/photo/IMG_4589.JPG',
+        '/images/bts/img5.jpeg',
 
 
   ];

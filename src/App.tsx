@@ -21,6 +21,8 @@ import { ServicesSection } from './components/ServicesSection';
 import { SocialSection } from './components/SocialSection';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
+import { SmoothScroll } from './components/SmoothScroll';
+import { ScrollDarkenOverlay } from './components/MotionReveals';
 import { Project } from './types';
 
 export function App() {
@@ -30,16 +32,19 @@ export function App() {
   const [activeSection, setActiveSection] = useState('work');
 
   return (
-    <div className="relative min-h-screen bg-[#050505] text-white selection:bg-[#FFB800] selection:text-black">
-      {/* Intro Reveal Animation */}
-      {!introFinished && (
-        <CinematicIntro onComplete={() => setIntroFinished(true)} />
-      )}
+    <SmoothScroll>
+      <div className="relative min-h-screen bg-[#050505] text-white selection:bg-[#FFB800] selection:text-black">
+        {/* Intro Reveal Animation */}
+        {!introFinished && (
+          <CinematicIntro onComplete={() => setIntroFinished(true)} />
+        )}
 
-      {/* Global Aesthetics & Overlays */}
-      <GrainOverlay />
-      <ScrollProgress />
-      <CustomCursor />
+        {/* Global Motion & Overlays */}
+        <GrainOverlay />
+        <ScrollProgress />
+        <ScrollDarkenOverlay />
+        <CustomCursor />
+
 
       {/* Header Navigation */}
       <Navbar activeSection={activeSection} />
@@ -77,22 +82,22 @@ export function App() {
         <EquipmentSection />
 
         {/* 9. REAL ESTATE SHOWCASE */}
-        <RealEstateShowcase 
+        {/* <RealEstateShowcase 
           onSelectProject={(proj) => setSelectedProject(proj)} 
-        />
+        /> */}
 
         {/* 10. MUSIC VIDEO SHOWCASE */}
-        <MusicVideoShowcase 
+        {/* <MusicVideoShowcase 
           onSelectProject={(proj) => setSelectedProject(proj)} 
-        />
+        /> */}
 
         {/* 11. WEDDING FILMS SHOWCASE */}
-        <WeddingFilmsSection 
+        {/* <WeddingFilmsSection 
           onSelectProject={(proj) => setSelectedProject(proj)} 
-        />
+        /> */}
 
         {/* 12. EDITORIAL PHOTOGRAPHY MASONRY */}
-        <PhotographyGallery />
+        {/* <PhotographyGallery /> */}
 
         {/* 13. BEHIND THE SCENES */}
         <BehindTheScenes />
@@ -117,7 +122,9 @@ export function App() {
         onSelectProject={(p) => setSelectedProject(p)} 
       />
     </div>
+    </SmoothScroll>
   );
 }
 
 export default App;
+

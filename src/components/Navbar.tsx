@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { AzzuDOPLogo } from './AzzuDOPLogo';
+// import { AzzuDOPLogo } from './AzzuDOPLogo';
 import { Menu, X, ArrowUpRight, Mail, Phone } from 'lucide-react';
 import { InstagramIcon, YoutubeIcon } from './SocialIcons';
 import { PERSONAL_INFO } from '../data/portfolioData';
@@ -45,9 +45,25 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between">
           {/* Logo */}
-          <a href="#" className="group flex items-center gap-3">
-            <AzzuDOPLogo size="sm" showSubtitle={false} />
-          </a>
+<a
+  href="#"
+  className="group flex items-center"
+>
+  <img
+    src="/images/logo/logo.png"
+    alt="AzzuDOP Logo"
+    className="
+      h-10
+      sm:h-12
+      w-auto
+      object-contain
+      transition-all
+      duration-500
+      group-hover:scale-105
+      group-hover:drop-shadow-[0_0_12px_rgba(255,184,0,0.45)]
+    "
+  />
+</a>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8 glass-panel px-6 py-2.5 rounded-full border border-white/10">
@@ -96,15 +112,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
       {/* Mobile Fullscreen Animated Overlay */}
       {mobileMenuOpen && (
         <div className="fixed inset-0 z-[9970] bg-[#050505]/95 backdrop-blur-2xl flex flex-col justify-between p-8 md:hidden border-b border-white/10">
-          <div className="flex justify-between items-center pt-4">
-            <AzzuDOPLogo size="sm" showSubtitle={true} />
-            <button 
-              onClick={() => setMobileMenuOpen(false)}
-              className="p-2 text-white hover:text-[#FFB800]"
-            >
-              <X className="w-7 h-7" />
-            </button>
-          </div>
+          
 
           <div className="flex flex-col gap-6 my-auto">
             {navLinks.map((link, idx) => (
